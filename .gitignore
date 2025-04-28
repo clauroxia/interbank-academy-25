@@ -1,0 +1,95 @@
+# Compiled binary folder should be ignored
+bin/
+obj/
+
+# The .vs folder contains Visual Studio-specific files
+.vs/
+
+# User-specific files should be ignored
+*.user
+*.rsuser
+*.suo
+
+# Mono auto generated files
+mono_crash.*
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet
+*.nupkg
+# NuGet packages folder
+packages/
+# The packages folder can be ignored if you're using PackageReference (NuGet 4+)
+!packages/*.gitkeep
+# Include only NuGet restore result
+!packages/build/
+!packages/solution/
+!packages/tools/
+!packages/*/build/
+!packages/*/contentFiles/
+!packages/*/runtimes/
+!packages/*/lib/
+!packages/*/native/
+!packages/*/ref/
+!packages/*/analyzers/
+!packages/*/buildMultiTargeting/
+!packages/*/buildTransitive/
+!packages/*/*/build/
+!packages/*/*/contentFiles/
+!packages/*/*/runtimes/
+!packages/*/*/lib/
+!packages/*/*/native/
+!packages/*/*/ref/
+!packages/*/*/analyzers/
+!packages/*/*/buildMultiTargeting/
+!packages/*/*/buildTransitive/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# File-based packages folder
+# it's used to store NuGet packages you are developing locally
+# which makes it easy to restore and update
+# these packages are typically included in your .gitignore file
+*.snupkg
+.snupkg/
+
+# Local History for Visual Studio
+.localhistory/
+
+# Logs
+*.log
+
+# NCrunch
+_NCrunch_*
+
+# User-specific files
+*.sln.ide
+*.sln.docstates
+
+# Rider
+.idea/
+
+# JetBrains Rider Unity cache directory
+.idea/.idea
+
+# DotCover is a JetBrains code coverage tool
+**.dcov
+
+# SpecFlow Feature File Extensions
+*.feature.cs
+
+# TypeScript v1 declaration files
+typings/
+
+# JET Assembly Browser caches
+ReSharperCache/
+
+# Yarn error log
+.yarn-error.log
