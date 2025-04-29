@@ -44,6 +44,7 @@
         }
     }
 
+    // Methods
     public static void GetFinalBalance()
     {
         if (transactionList.Count == 0)
@@ -76,7 +77,7 @@
     {
         if (transactionList.Count == 0)
         {
-            Console.WriteLine("Credit: 0 Debit: 0");
+            Console.WriteLine("No transactions found.");
             return;
         }
 
@@ -90,7 +91,7 @@
     {
         if (transactionList.Count == 0)
         {
-            Console.WriteLine("Credit: 0 Debit: 0");
+            Console.WriteLine("No transactions found.");
             return;
         }
 
