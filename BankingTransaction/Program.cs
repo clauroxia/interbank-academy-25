@@ -7,9 +7,9 @@
         string? userAnswer;
         while (!exit)
         {
-            Console.WriteLine("\n******************************************");
-            Console.WriteLine(" Procesamiento de Transacciones Bancarias ");
-            Console.WriteLine("******************************************");
+            Console.WriteLine("\n*****************************");
+            Console.WriteLine(" Bank Transaction Processing ");
+            Console.WriteLine("*****************************");
             Console.WriteLine("Menu:");
             Console.WriteLine("1. Get Final Balance");
             Console.WriteLine("2. Get Highest Value Transaction");
@@ -21,25 +21,31 @@
 
             switch (userAnswer)
             {
-            case "1":
-                GetFinalBalance();
-                break;
-            case "2":
-                GetHighestValueTransaction();
-                break;
-            case "3":
-                GetTransactionCount();
-                break;
-            case "4":
-                GetGeneralTransactionReport();
-                break;
-            case "5":
-                Console.WriteLine("Good bye!");
-                exit = true;
-                break;
-            default:
-                Console.WriteLine("Please enter a valid option");
-                break;
+                case "1":
+                    GetFinalBalance();
+                    break;
+                case "2":
+                    GetHighestValueTransaction();
+                    break;
+                case "3":
+                    GetTransactionCount();
+                    break;
+                case "4":
+                    GetGeneralTransactionReport();
+                    break;
+                case "5":
+                    Console.WriteLine("Good bye!");
+                    exit = true;
+                    break;
+                default:
+                    Console.WriteLine("Please enter a valid option");
+                    break;
+            }
+            if (!exit)
+            {
+                Console.WriteLine("\nPress any key to continue...");
+                Console.ReadKey();
+                Console.Clear(); // Clear the console
             }
         }
     }
@@ -100,10 +106,10 @@
         var (credit, debit) = TransactionService.GetTransactionCount(transactionList);
 
         Console.WriteLine("\n---------------------------------------------");
-        Console.WriteLine("Reporte de Transacciones");
+        Console.WriteLine("Transactions Report");
         Console.WriteLine("---------------------------------------------");
-        Console.WriteLine($"Balance Final: {balance:F2}");
-        Console.WriteLine($"Transacción de Mayor Monto: ID {highestValue?.Id} - {highestValue?.Amount:F2}");
-        Console.WriteLine($"Conteo de Transacciones: Crédito: {credit} Débito: {debit}");
+        Console.WriteLine($"Final Balance: {balance:F2}");
+        Console.WriteLine($"Highest Value Transaction: ID {highestValue?.Id} - {highestValue?.Amount:F2}");
+        Console.WriteLine($"Transaction Count: Crédito: {credit} Débito: {debit}");
     }
 }
