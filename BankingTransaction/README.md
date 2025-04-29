@@ -42,6 +42,7 @@ El objetivo es crear una aplicación CLI sencilla, en la que hacemos uso de la P
 4. Uso de CultureInfo.InvariantCulture para asegurar la correcta lectura de decimales.
 
 ## Estructura del Proyecto
+```text
 INTERBANK-ACADEMY-25/
 │
 ├── BankingTransaction/
@@ -58,3 +59,4 @@ INTERBANK-ACADEMY-25/
 ├── data.csv                         # Archivo con transacciones de entrada
 │── interbank-academy-25.sln         # Referencia a la solución del proyecto
 └── README.md                        # Instrucciones para desarrollar el proyecto
+```
