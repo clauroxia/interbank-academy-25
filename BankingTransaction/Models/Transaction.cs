@@ -15,7 +15,7 @@ public class Transaction
 
   public static List<Transaction> ReadCsvFile()
   {
-    using var reader = new StreamReader("../data.csv");
+    using var reader = new StreamReader("data.csv");
 
     try
     { 
